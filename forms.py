@@ -1,13 +1,8 @@
 from django import forms
+from models import results
+from django.forms.models import ModelForm
 
-#TOPIC_CHOICES = (
-#    ('general', 'General enquiry'),
-#    ('bug', 'Bug report'),
-#    ('suggestion', 'Suggestion'),
-#)
+class PingForm(ModelForm):
 
-class PingForm(forms.Form):
-#    topic = forms.ChoiceField(choices=TOPIC_CHOICES)
-    pingback = forms.CharField()
-#    sender = forms.EmailField(required=False)
+    class Meta: model = result
 

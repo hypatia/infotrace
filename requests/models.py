@@ -9,8 +9,7 @@ class Query(models.Model):
     protocol = models.CharField(max_length=30)
 
     def __str__(self):
-        return self.name
-
+        return '%s %s %s %s' % (self.name, self.from_site, self.to_domain, self.protocol)
 #class QueryAdmin(admin.ModelAdmin):
 #    model = Query
 
