@@ -1,0 +1,8 @@
+#monthly
+15 3 15 * * ssh user@backend monthly >> process_results.py
+#weekly
+45 23 * /7 6 ssh user@backend weekly >> process_results.py
+#daily
+30 5 * * * ssh user@backend daily >> process_results.py
+#hourly
+0 * * * * ssh user@backend hourly >> process_results.py
