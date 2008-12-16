@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-from infotrace.views import current_datetime, ping
+from infotrace.views import current_datetime#, ping
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -15,5 +15,5 @@ urlpatterns = patterns('',
 #    (r'^admin/', include('django.contrib.admin.urls')),
     (r'^admin/(.*)', admin.site.root),
     (r'^time/$', current_datetime),
-    (r'^ping/$', ping),
+#    (r'^ping/$', ping),
 )
